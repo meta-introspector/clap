@@ -43,7 +43,7 @@ completest-pty = { version = "0.5.5", optional = true }
 [dev-dependencies]
 snapbox = { version = "0.6.0", features = ["diff", "dir", "examples"] }
 # Cutting out `filesystem` feature
-trycmd = { version = "0.15.1", default-features = false, features = ["color-auto", "diff", "examples"] }
+trycmd = { workspace=true, features = ["color-auto", "diff", "examples"] }
 clap = { path = "../", version = "4.5.20", default-features = false, features = ["std", "derive", "help"] }
 automod = "1.0.14"
 

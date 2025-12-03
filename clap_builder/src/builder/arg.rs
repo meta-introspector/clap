@@ -11,9 +11,10 @@ use std::{
 
 // Internal
 use super::{ArgFlags, ArgSettings};
-#[cfg(feature = "unstable-ext")]
-use crate::builder::ext::Extension;
-use crate::builder::ext::Extensions;
+use crate::ArgAction;
+use crate::INTERNAL_ERROR_MSG;
+use crate::Id;
+use crate::ValueHint;
 use crate::builder::ArgPredicate;
 use crate::builder::IntoResettable;
 use crate::builder::OsStr;
@@ -22,11 +23,10 @@ use crate::builder::Str;
 use crate::builder::StyledStr;
 use crate::builder::Styles;
 use crate::builder::ValueRange;
+#[cfg(feature = "unstable-ext")]
+use crate::builder::ext::Extension;
+use crate::builder::ext::Extensions;
 use crate::util::AnyValueId;
-use crate::ArgAction;
-use crate::Id;
-use crate::ValueHint;
-use crate::INTERNAL_ERROR_MSG;
 
 /// The abstract representation of a command line argument. Used to set all the options and
 /// relationships that define a valid argument for the program.

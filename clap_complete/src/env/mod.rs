@@ -229,7 +229,9 @@ impl<'s, F: Fn() -> clap::Command> CompleteEnv<'s, F> {
 
         // Ensure any child processes called for custom completers don't activate their own
         // completion logic.
-        std::env::remove_var(self.var);
+        unsafe {
+            std::env::remove_var(self.var);
+        }
 
         let shell = self.shell(std::path::Path::new(&name))?;
 

@@ -14,7 +14,7 @@
 
 use proc_macro2::{Ident, Span, TokenStream};
 use quote::{format_ident, quote, quote_spanned};
-use syn::{spanned::Spanned, Data, DeriveInput, FieldsUnnamed, Generics, Variant};
+use syn::{Data, DeriveInput, FieldsUnnamed, Generics, Variant, spanned::Spanned};
 
 use crate::derives::args;
 use crate::derives::args::collect_args_fields;
