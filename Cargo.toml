@@ -98,14 +98,14 @@
 # assigning_clones = "allow"
 # blocks_in_conditions = "allow"
 
-[profile.dev]
-panic = "abort"
+#[profile.dev]
+#panic = "abort"
 
-[profile.release]
-panic = "abort"
-codegen-units = 1
-lto = true
-# debug = "line-tables-only"  # requires Cargo 1.71
+# [profile.release]
+# panic = "abort"
+# codegen-units = 1
+# lto = true
+# # debug = "line-tables-only"  # requires Cargo 1.71
 
 [package]
 name = "clap"
