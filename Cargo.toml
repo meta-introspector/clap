@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-[workspace]
-members = [
-  "clap_bench",
-  "clap_derive",
-  "clap_lex",
-  "clap_complete",
-  "clap_complete_fig",
-  "clap_mangen",
-]
-
-=======
-<<<<<<< HEAD
-=======
 #[workspace]
 # resolver = "2"
 # members = [
