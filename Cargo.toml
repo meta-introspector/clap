@@ -107,8 +107,7 @@
 # lto = true
 # # debug = "line-tables-only"  # requires Cargo 1.71
 
->>>>>>> 816d350f (feat: Add/update Nix flake for submodule (CRQ-016))
->>>>>>> 9d6140b7 (feat: Add/update Nix flake for submodule (CRQ-016))
+
 [package]
 name = "clap"
 version = "3.2.25"
