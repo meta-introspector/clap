@@ -65,5 +65,5 @@ unstable-doc = ["unstable-dynamic"] # for docs.rs
 unstable-dynamic = [
 #"dep:clap_lex",
 "dep:shlex", "dep:is_executable"]
-unstable-shell-tests = ["dep:completest", "dep:completest-pty"]
+unstable-shell-tests = []
 debug = ["clap/debug"]
