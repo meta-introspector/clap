@@ -1273,7 +1273,7 @@ impl Method {
 
 impl ToTokens for Method {
     fn to_tokens(&self, ts: &mut TokenStream) {
-        let Method { ref name, ref args } = self;
+        let Method { name, args } = self;
 
         let tokens = quote!( .#name(#args) );
 

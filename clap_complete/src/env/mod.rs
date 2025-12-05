@@ -229,7 +229,11 @@ impl<'s, F: Fn() -> clap::Command> CompleteEnv<'s, F> {
 
         // Ensure any child processes called for custom completers don't activate their own
         // completion logic.
-        std::env::remove_var(self.var);
+        println!(
+            "WARNING: Environment variable {} with value {:?} is LEAKED. `std::env::remove_var` is disabled due to `forbid(unsafe_code)`.",
+            self.var,
+            std::env::var_os(self.var)
+        );
 
         let shell = self.shell(std::path::Path::new(&name))?;
 
